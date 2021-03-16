@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -18,23 +20,31 @@
         <nav>
             <ul>
                 <li><a href="index.html">hem</a></li>
-                <li>länk</li>
+                <li><a href="#">länk</a></li>
                 <li><a href="kontaktform.html">kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="contact-wrapper">
-            <form>
-                <label>kontakt</label>
-                <input type="text" placeholder="Förnamn">
-                <input type="text" placeholder="Efternamn">
-                <input type="number" placeholder="Telefon">
-                <input type="text" placeholder="Email">
-                <textarea id="subject" name="subject" placeholder="Meddelande" style="height:200px"></textarea>
-                <input type="submit" value="Skicka">
-            </form>
-        </div>
+        <form class="contact_wrapper">
+            <div class="contact_sections">
+                <h2>kontakta oss</h2> 
+            </div> 
+            <div class="contact_sections"> 
+                <section class="inputs">
+                    <input type="text" placeholder="Förnamn">
+                    <input type="text" placeholder="Efternamn">
+                    <input type="number" placeholder="Telefon">
+                    <input type="text" placeholder="Email">
+                </section>
+                <section class="inputs">
+                    <textarea id="subject" name="subject" placeholder="Meddelande" style="height:200px"></textarea>
+                </section>
+            </div> 
+            <div class="contact_sections">
+                <input class="submit_btn" type="submit" value="Skicka">
+            </div>
+        </form>
     </main>
     <footer>
         <p>&#169 Linus, Vincent, Rebecka, Thien</p>
