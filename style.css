@@ -40,28 +40,17 @@ a:focus {
 }
 
 aside {
-<<<<<<< HEAD
-    position: relative;
-    margin: 1rem;
-=======
   position: relative;
   margin: 1.5rem;
->>>>>>> feature-rebeckaAlsterlind
 }
 
 h1 {
   font-size: 2rem;
 }
 
-<<<<<<< HEAD
-aside > h1 > a {
-    color: white;
-    font-size: 3rem;
-=======
 aside a {
   color: white;
   font-size: 2.5rem;
->>>>>>> feature-rebeckaAlsterlind
 }
 
 nav {
