@@ -101,7 +101,7 @@ h2 {
     margin: 2rem;
 }
 
-main p {
+.contact_wrapper p {
     text-align: center;
     display: block;
     width: 60%;
@@ -121,6 +121,10 @@ main p {
 .submit_btn:active, .submit_btn:focus {
     color: white;
     background:rgba(24, 24, 24, .8);
+}
+
+.landing_wrapper > h3, p {
+    color: white;
 }
 
 footer {
