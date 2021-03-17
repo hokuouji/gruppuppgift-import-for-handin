@@ -1,130 +1,141 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(63, 63, 63);
-    color:rgb(32, 116, 101);
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(63, 63, 63);
+  color: rgb(32, 116, 101);
 }
 
 header {
-    background-color: rgba(24, 24, 24, .8);
-    display: flex;
-    flex-flow: row nowrap;
-    position: fixed;
-    width: 100%;
-    height: 5rem;
+  background-color: rgba(24, 24, 24, 0.8);
+  display: flex;
+  flex-flow: row nowrap;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
 }
 
 a:hover {
-    color: rgba(167, 228, 185, 0.801);
+  color: rgba(167, 228, 185, 0.801);
 }
 
-a:active, a:focus {
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    outline: none;
+a:active,
+a:focus {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  outline: none;
 }
 
 aside {
-    position: relative;
-    margin: 30px;
+  position: relative;
+  margin: 30px;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 aside > h1 {
-    color: white;
+  color: white;
 }
-nav{
-    flex:70%;
-    margin-bottom: auto;
+nav {
+  flex: 70%;
+  margin-bottom: auto;
 }
 
 ul {
-    position: relative;
-    top: 40px;
-    display: flex;
-    justify-content: space-evenly;
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 li {
-    display: inline-block;
+  display: inline-block;
+  font-size: 1.5rem;
 }
 
 main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact_wrapper {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    font-size: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-size: 2rem;
 }
 
 .contact_sections {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 input {
-    display: block;
-    margin: 0 .7rem .7rem 0;
+  display: block;
+  margin: 0 0.7rem 0.7rem 0;
 }
-input::placeholder, textarea::placeholder {
-    font-family: 'Poppins', sans-serif;
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
 }
 
-h2, h1, li{
-    text-transform: uppercase;
+h2,
+h1,
+li {
+  text-transform: uppercase;
 }
 
 h2 {
-    font-size: 1.5em;
-    margin: 2rem;
+  font-size: 1.5em;
+  margin: 2rem;
 }
 
 .contact_wrapper p {
-    text-align: center;
-    display: block;
-    width: 60%;
+  text-align: center;
+  display: block;
+  width: 60%;
 }
 
-.submit_btn{
-    background: rgba(24, 24, 24, .5);
-	color: inherit;
-	border: 3px solid rgba(24, 24, 24, .8);
-	padding: .1em .5em;
-    font: inherit;
-    font-size: .5em;
-	cursor: pointer;
-    outline: inherit;
-    margin: 2rem;
+.submit_btn {
+  background: rgba(24, 24, 24, 0.5);
+  color: inherit;
+  border: 3px solid rgba(24, 24, 24, 0.8);
+  padding: 0.1em 0.5em;
+  font: inherit;
+  font-size: 0.5em;
+  cursor: pointer;
+  outline: inherit;
+  margin: 2rem;
 }
-.submit_btn:active, .submit_btn:focus {
-    color: white;
-    background:rgba(24, 24, 24, .8);
+.submit_btn:active,
+.submit_btn:focus {
+  color: white;
+  background: rgba(24, 24, 24, 0.8);
 }
 
-.landing_wrapper > h3, p {
-    color: white;
+.landing_wrapper > h3,
+p {
+  color: white;
 }
 
 footer {
@@ -134,6 +145,11 @@ footer {
     background-color: rgba(24, 24, 24, .5);
     font-size: 1rem;
     text-align: center;
+}
+
+footer p {
+  padding-top: 1.3rem;
+  color: rgb(32, 116, 101);
 }
 
 .card-container {
@@ -149,7 +165,6 @@ footer {
 }
 
 .card-img {
-    
     width: 100%;
     border-radius: 2px;
 }
