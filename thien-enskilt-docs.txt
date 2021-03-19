@@ -1,0 +1,84 @@
+15 mars
+
+Jag skapde branchen feature-thien och staging med kommandon:
+
+    * git branch feature-thien
+    * git branch staging
+
+Jag la till index.html och style.css i feature-thien och commit och pushade till remote repo med hjälp av git push origin feature-thien.
+Därefter använde jag git checkout staging och git merge feature-thien för att hämta alla filer och avslutade med git push origin staging.
+Jag har också använt git fetch för att hämta alla remote branches.
+
+==========================
+
+17 mars
+
+Jag uppdaterade mina local files i branchen staging genom:
+
+    * git checkout staging
+    * git pull origin staging
+
+Sen gick jag tillbaka till min egen branch för att hämta uppdateringen:
+
+    * git checkout feature-thien
+    * git merge staging
+
+Jag fick ingen merge conflict. Jag har lagt till lite mer kod nu och gör detta:
+
+    * git add .
+    * git commit -m "added cards for every member"
+    * git push origin feature-thien
+
+Någon har uppdaterat staging branchen så jag måste göra:
+
+    * git checkout staging
+    * git pull origin staging
+    * git checkout feature-thien
+    * git merge staging
+
+Jag fick en merge conflict.
+Jag löser conflict genom att acceptera my current changes för att jag kodade sist och det fanns bara gammal kod i incoming changes.
+Efteråt gör jag:
+
+    * git add .
+    * git commit -m "fixed merge conflict"
+    * git push origin feature-thien
+
+Nu ska jag uppdatera staging branchen med den senaste koden så jag gör följande:
+
+    * git checkout staging
+    * git merge feature-thien
+
+==========================
+
+19 mars
+
+Jag hämtar den senaste uppdateringen till min branch genom att:
+
+    * git checkout staging
+    * git pull origin staging
+    * git checkout feature-thien
+    * git merge staging
+
+Nu ska jag använda git revert, jag har ingen behov men måste använda för VG krav så jag skapar en test commit:
+
+    * git add .
+    * git commit -m "revert test commit"
+    * git push origin feature-thien
+    * git revert 61725e2
+    * git commit -m "reverted commit 61725e2"
+    * git push origin feature-thien
+
+Jag har lagt till enskilt docs i projektet genom att:
+
+    * git add .
+    * git commit -m "added thiens enskilt docs"
+    * git push origin feature-thien
+    * git checkout staging
+
+För att inte få merge conflicts så hämtar jag den senaste uppdateringen:
+
+    * git pull origin staging
+    * git merge feature-thien
+    * git commit -m "added thiens enskilt docs to staging"
+    * git push origin staging

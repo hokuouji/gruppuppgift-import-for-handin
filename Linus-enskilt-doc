@@ -1,0 +1,24 @@
+•	Git clone – För att klona ner repot lokalt från github.
+•	Git branch- Det första jag gjorde var att skapa en branch i terminal med hjälp av git branch och sedan namn feature-Linus
+•	Git checkout- Detta gjorde jag sedan för att byta så att jag var inuti min branch och arbetade.
+•	Git push origin feature-Linus- Detta gjorde jag för att pusha upp min branch på github så den är synlig för mina medarbetare.
+•	Git remote -v -Detta använda jag för att se alla remote repo branches som skapats av mina medarbetare så att sedan kunde fetcha ner dom lokalt till mig.
+•	Git fetch- Detta gjorde jag då för att få de andra brancherna lokalt på min dator.
+•	Git merge staging- Detta var nästa steg så att jag skulle få tillgång till det som vi skrivit gemensamt i staging i min egna branch.
+•	Git add .- När jag sedan börjat arbeta på min feature i min egen branch så använder jag mig av gitt add . för att lägga in det jag har gjort i staging.
+•	Git commit -m ”msg”- När jag sedan vill pusha upp det jag har gjort till github så att mina medarbetare kan se vad jag gjort så commitar jag och efter det pushar origin feature -Linus som min barnch heter.
+•	Git checkout – Sedan checkar jag ut till vår staging branch som vi använder för att vi ska kunna kodgranska det alla gjort innan vi mergar något till main.
+•	Git merge feature-Linus- Sedan när jag är klar med med något av mitt så mergar jag vår staging branch med min branch där jag har arbetat med mitt så att det nu ligger i staging branchen där mina medarbetare kan koll vad jag har arbetat med.
+•	Git pull origin staging- När jag skulle hämta (git pull) det senaste från vår staging branch så uppstod det en merge konflikt i våran css fil på tre olika ställen och i html filen på ett ställe, detta löste jag på så sätt att jag accepterade the incoming changes som hade gjorts.
+•	Git add . Git commit -m ”msg” -error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict. 
+Sedan så fick jag dessa konflikter i terminalen när jag hade mergat branchern, dessa löste jag då genom att göra först git add . och sedan git commit -m ”msg”.
+•	Git commit -  * branch  staging    -> FETCH_HEAD   e4af340..df826ad  staging  > origin/staging Auto-merging style.css
+CONFLICT (content): Merge conflict in style.css
+Auto-merging kontaktform.html
+CONFLICT (content): Merge conflict in kontaktform.html
+Auto-merging index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
